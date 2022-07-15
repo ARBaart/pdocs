@@ -47,10 +47,10 @@ ${long_desc}
     % if params:
 **Parameters:**
 
-| Name | Type | Description | Default |
-|---|---|---|---|
+| Name | Description |
+|---|---|
         % for p in params:
-| ${p.arg_name} | ${p.type_name} | ${p.description} | ${p.default} |
+| ${p.arg_name} | ${p.description} |
         % endfor
     % endif
 
@@ -137,10 +137,10 @@ ${long_desc}
     % if params:
 ${h4("Attributes")}
 
-| Name | Type | Description | Default |
-|---|---|---|---|
+| Name | Description |
+|---|---|
         % for p in params:
-| ${p.arg_name} | ${p.type_name} | ${p.description} | ${p.default} |
+| ${p.arg_name}  | ${p.description} |
         % endfor
     % endif
 % else:
