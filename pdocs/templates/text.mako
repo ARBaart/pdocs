@@ -224,9 +224,13 @@ ${function(m, True)}
 
 ${h1(heading + " " + module.name)}
 % if parsed_ds:
+    % if parsed_ds.short_description:
 ${parsed_ds.short_description}
+    % endif
 
+    % if parsed_ds.long_description:
 ${parsed_ds.long_description}
+    % endif
 ## TODO: add meta (example and notes)
 % else:
 ${module.docstring}
